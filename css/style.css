@@ -51,19 +51,58 @@ section {
     border-radius: 8px;
 }
 
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+    gap: 20px;
+}
+
+.portfolio-item {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.portfolio-item h3 {
+    margin-top: 0;
+}
+
+.portfolio-item dl {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 12px;
+}
+
+.portfolio-item dt {
+    font-weight: bold;
+}
+
+.portfolio-item dd {
+    margin: 0;
+}
+
 h2 {
     border-bottom: 2px solid #222;
     padding-bottom: 10px;
 }
 
 
-img {
+.profile-photo {
     width: 180px;
     height: 180px;
 
     object-fit: cover;
 
     border-radius: 50%;
+}
+
+.portfolio-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
 }
 
 

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>My A1 Website</title>
+    <title>My A2 Project</title>
 
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -13,13 +13,11 @@
 <body>
 
     <header>
-        <h1>My A1 Website</h1>
+        <h1>My Learning Portfolio</h1>
 
         <nav>
             <a href="#about">About Me</a>
-            <a href="#built">What I Built</a>
-            <a href="#how">How I Built It</a>
-            <a href="#reflection">Reflection</a>
+            <a href="#portfolio">Portfolio</a>
         </nav>
     </header>
 
@@ -29,7 +27,7 @@
         <section id="about">
             <h2>About Me</h2>
 
-            <img src="media/profile.jpg" alt="Profile">
+            <img class="profile-photo" src="media/profile.jpg" alt="Profile">
 
             <p>
                 ชื่อ <strong>นายปราชญ์ วงศ์วรชาติกาล</strong>
@@ -45,90 +43,55 @@
         </section>
 
 
-        <section id="built">
-            <h2>What I Built</h2>
+        <section id="portfolio">
+            <h2>Portfolio</h2>
 
-            <p>
-                สำหรับ Assignment 1 ผมได้สร้าง Website หน้าเดียว
-                เพื่อแนะนำตัวเอง
-                โดยใช้แค่ HTML และ CSS
-            </p>
+            <div class="portfolio-grid">
+                <article class="portfolio-item">
+                    <h3>Quiz 4 : Bootstrap Framework (Formative)</h3>
+                    <dl>
+                        <div>
+                            <dt>Type</dt>
+                            <dd>Quiz</dd>
+                        </div>
+                        <div>
+                            <dt>Date</dt>
+                            <dd>23 Sep 2026</dd>
+                        </div>
+                        <div>
+                            <dt>Role</dt>
+                            <dd>Individual Developer</dd>
+                        </div>
+                    </dl>
+                    <p><strong>Description:</strong> พัฒนาเว็บไซต์โดยใช้ Bootstrap เพื่อจัดรูปแบบและวางโครงสร้างหน้าเว็บให้มีความสวยงามและรองรับการแสดงผลบนอุปกรณ์หลายขนาด</p>
+                    <p><strong>Skills:</strong> HTML, Bootstrap 5, CSS</p>
+                    <p><strong>Reflection:</strong> ผมได้เรียนรู้วิธีใช้ Bootstrap เพื่อช่วยลดการเขียน CSS ด้วยตนเอง และเข้าใจการทำ Responsive Web Design ผ่านระบบ Grid และ Breakpoints เช่น col-12 และ col-md-6
+การทำความเข้าใจว่า Bootstrap แต่ละ class ทำงานอย่างไร โดยเฉพาะเรื่อง Grid, Breakpoints และ Flexbox ตอนแรกยังสับสนระหว่าง class ต่าง ๆ แต่หลังจากทดลองปรับขนาดหน้าจอและทดสอบหลายรูปแบบ ทำให้เข้าใจการทำงานมากขึ้น</p>
+                    <img class="portfolio-evidence" src="media/Bootstrap.png" alt="Quiz 4 Bootstrap Framework evidence">
+                </article>
 
-            <p>
-                ภายใน Website ประกอบด้วยข้อมูลเกี่ยวกับตัวผม
-                วิธีการสร้าง Website และสิ่งที่ได้เรียนรู้จากการทำงานนี้
-            </p>
-
-            <h3>Client and Server</h3>
-
-            <p>
-                เมื่อเปิด Website จากเครื่องของผมเอง
-                Web Browser จะทำหน้าที่เป็น Client
-                โดย Browser จะอ่านไฟล์ HTML และ CSS
-                แล้วนำมาแสดงผลเป็น Website
-            </p>
-
-            <p>
-                ไม่มี Server เนื่องจากสามารถเปิดไฟล์ HTML(index.html) จากเครื่องของตัวเองได้โดยตรง
-            </p>
-        </section>
-
-
-        <section id="how">
-            <h2>How I Built It</h2>
-
-            <p>
-                ขั้นแรกผมวางโครงสร้างของ Website และกำหนดหัวข้อที่ต้องการเขียน
-                จากนั้นจึงสร้างโครงสร้างของหน้าเว็บด้วย HTML
-                และใช้ CSS ในการตกแต่ง Website
-            </p>
-
-            <h3>Tools I Used</h3>
-
-            <ul>
-                <li>Visual Studio Code</li>
-                <li>Google Chrome</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>w3schools</li>
-            </ul>
-
-            <p>
-                แหล่งข้อมูลที่ใช้ศึกษา:
-                <a href="https://www.w3schools.com/html/">
-                    w3schools
-                </a>
-            </p>
-        </section>
-
-
-        <section id="reflection">
-            <h2>Reflection</h2>
-
-            <h3>Challenges</h3>
-
-            <p>
-                ปัญหาที่พบคือการทำความเข้าใจว่า HTML และ CSS
-                ทำงานร่วมกันอย่างไรโดยแยก Files รวมถึงการจัดตำแหน่งและตกแต่งองค์ประกอบต่าง ๆ
-                ผมแก้ปัญหาโดยทดลองแก้ไขโค้ดทีละส่วน
-                และตรวจสอบผลลัพธ์ผ่าน Web Browser
-            </p>
-
-            <h3>What I Learned</h3>
-
-            <p>
-                ผมเข้าใจ HTML มากขึ้นว่า HTML
-                ใช้สำหรับสร้างโครงสร้างและเนื้อหาของเว็บไซต์
-                ส่วน CSS ใช้สำหรับกำหนดรูปแบบ สี ขนาด
-                และการจัดวางองค์ประกอบต่าง ๆ และ Website เล็กๆแต่ใช้เวลาทำนานมาก
-            </p>
-
-            <h3>Future Improvements</h3>
-
-            <p>
-                หากมีโอกาสพัฒนาต่อ ผมอยากเพิ่มข้อมูลเกี่ยวกับ Projects
-                ที่เคยทำ และปรับปรุงการออกแบบให้สวยงามและใช้งานง่ายมากขึ้น
-            </p>
+                <article class="portfolio-item">
+                    <h3>Roblox Game Development: Optimization</h3>
+                    <dl>
+                        <div>
+                            <dt>Type</dt>
+                            <dd>Personal Project</dd>
+                        </div>
+                        <div>
+                            <dt>Date</dt>
+                            <dd>ไม่ระบุ</dd>
+                        </div>
+                        <div>
+                            <dt>Role</dt>
+                            <dd>Game Developer</dd>
+                        </div>
+                    </dl>
+                    <p><strong>Description:</strong> พัฒนาเกมบน Roblox โดยเน้นการปรับปรุงประสิทธิภาพและประสบการณ์การเล่น</p>
+                    <p><strong>Skills:</strong> Roblox Studio, Luau, Game Optimization</p>
+                    <p><strong>Reflection:</strong> โปรเจกต์นี้ทำให้ผมได้เรียนรู้ว่าการพัฒนาเกมไม่ได้มีแค่การเพิ่มฟีเจอร์ แต่ยังต้องคำนึงถึงประสิทธิภาพและความลื่นไหลในการเล่นด้วย หากพัฒนาต่อ ผมอยากทดสอบเกมในหลายสถานการณ์และปรับปรุงจุดที่ส่งผลต่อประสบการณ์ของผู้เล่น</p>
+                    <img class="portfolio-evidence" src="media/Optimization.png" alt="Roblox Game Development Optimization evidence">
+                </article>
+            </div>
         </section>
 
     </main>
@@ -141,4 +104,3 @@
 </body>
 
 </html>
-
